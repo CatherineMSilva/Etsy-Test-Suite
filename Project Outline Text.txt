@@ -1,0 +1,60 @@
+Project Goal: The goal of this project will be to create an end-to-end testing suite to test the functionality of the Etsy open-source website. We will use many methods including Java and selenium frameworks to create automated testing to thoroughly review each unit of the website. 
+
+Summary: <Insert robust summary of all systems in out tests>
+
+Work-Flow Diagram: <Insert workflow Diagram>
+
+GitHub Link: https://github.com/CatherineMSilva/Etsy-Test-Suite < submit a zip file of code>
+
+Work Conducted: <In-depth analysis of work conducted by team (contributions)> 
+
+Tools Used: <A list of software testing tools used>
+
+Motivation: <State differences that tests make to system>
+
+Appendix: Attach all codes in zip file and attach to submission
+
+
+
+
+
+
+
+
+
+Class- User Account Creation and Management: (DONE - Sahbah)
+•	Method- Test account registration with valid credentials
+•	Method- Test account registration with invalid credentials
+•	Method- Verify email verification process.
+Class- User login: (DONE - Sahbah)
+•	Method- Test login functionality (successful login, failed login with incorrect credentials).
+•	Method- Test password reset functionality.
+•	Method- Test forgot password functionality. 
+Class- User profile edit: (PARTIAL - Sahbah)
+•	Method- add profile picture. 
+•	Method- change gender with radio buttons.  
+•	Method- edit city. 
+•	Method- edit birthday using dropdown menu. 
+Class- Search Functionality: (PARTIAL - Sahbah)
+•	Method- Test search with various keywords.
+•	Method- Verify filtering and sorting of search results.
+1.	Test will fail (ask about this in class)
+•	Method- test auto-suggestion 
+Class- Product Pages:
+•	Method- Verify correct display of product information (price, description – take screenshot, photos).
+•	Method- Test the functionality of product reviews and questions. (sort drop down)
+•	Method- Test liking a product (check if it goes into liked products)
+Class- Shopping Cart: (PARTIAL – cat)
+•	Method- Test adding and removing items from the shopping cart.
+•	Method- Verify updates to quantities.
+•	Method- Test saving and retrieving the cart after logging out and back in.
+Class- Checkout Process: (PARTIAL – cat)
+•	Method- Test the checkout process with various payment methods (credit card, PayPal, Etsy gift cards).
+•	Method- Verify the application of discounts or coupon codes.
+•	Method- Test billing and shipping information can be entered and validated.
+Class- Seller Features: (PARTIAL -cat)
+•	Method: Test opening an Etsy shop through the new account created
+•	Method- Test listing a new item for sale with different categories and method- attributes.
+•	Method- Verify editing and deleting listings.
+•	Method- Check the functionality of the seller dashboard for sales, reviews, and analytics.
+
