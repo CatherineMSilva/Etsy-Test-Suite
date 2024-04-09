@@ -70,8 +70,7 @@ public class ShoppingCart {
     }
 
 
-
-    @Test (priority = 1) void update_quantity () throws InterruptedException {
+    @Test (priority = 2) void update_quantity () throws InterruptedException {
         System.setProperty("web driver.chrome.driver", "C:\\Users\\USER\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.etsy.com/");
@@ -131,7 +130,7 @@ public class ShoppingCart {
     @Test (priority = 3) void save_cart () throws InterruptedException, IOException {
         System.setProperty("web driver.chrome.driver", "C:\\Users\\USER\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        driver.get("https://www.etsy.com");
+        driver.get("https://www.etsy.com/");
         driver.manage().window().maximize();
 
         WebElement SingInButton = driver.findElement(By.cssSelector("#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button"));
