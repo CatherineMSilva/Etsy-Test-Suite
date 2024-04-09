@@ -129,7 +129,7 @@ public class ShoppingCart {
     }
 
     @Test (priority = 3) void save_cart () throws InterruptedException, IOException {
-     System.setProperty("web driver.chrome.driver", "C:\\Users\\USER\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
+        System.setProperty("web driver.chrome.driver", "C:\\Users\\USER\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.etsy.com");
         driver.manage().window().maximize();
