@@ -1,29 +1,14 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class CheckoutProcess {
+public class CheckoutProcess extends baseClass {
+    //WebDriver driver = new ChromeDriver();
+
     @Test (priority = 1) void shipping () throws InterruptedException {
-        System.setProperty("web driver.chrome.driver", "C:\\Users\\USER\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.etsy.com/");
-        driver.manage().window().maximize();
-
-        WebElement SingInButton = driver.findElement(By.cssSelector("#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button"));
-        SingInButton.click();
-        Thread.sleep(3000);
-        WebElement emailTexbox = driver.findElement(By.xpath("//*[@id=\"join_neu_email_field\"]"));
-        emailTexbox.sendKeys("Velveeta_Cheese@outlook.com");
-        WebElement passTextbox = driver.findElement(By.xpath("//*[@id=\"join_neu_password_field\"]"));
-        passTextbox.sendKeys("Cheese!");
-
-        WebElement logInButton = driver.findElement(By.xpath("//*[@id=\"join-neu-form\"]/div[1]/div/div[7]/div/button"));
-        logInButton.click();
-        Thread.sleep(3000);
 
         //go to cart and check that item saved
         driver.findElement(By.cssSelector("#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(6) > span > a")).click();
@@ -37,22 +22,6 @@ public class CheckoutProcess {
     }
 
     @Test (priority = 2) void payment_method () throws InterruptedException {
-        System.setProperty("web driver.chrome.driver", "C:\\Users\\USER\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.etsy.com/");
-        driver.manage().window().maximize();
-
-        WebElement SingInButton = driver.findElement(By.cssSelector("#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button"));
-        SingInButton.click();
-        Thread.sleep(3000);
-        WebElement emailTexbox = driver.findElement(By.xpath("//*[@id=\"join_neu_email_field\"]"));
-        emailTexbox.sendKeys("Velveeta_Cheese@outlook.com");
-        WebElement passTextbox = driver.findElement(By.xpath("//*[@id=\"join_neu_password_field\"]"));
-        passTextbox.sendKeys("Cheese!");
-
-        WebElement logInButton = driver.findElement(By.xpath("//*[@id=\"join-neu-form\"]/div[1]/div/div[7]/div/button"));
-        logInButton.click();
-        Thread.sleep(3000);
 
         //go to cart and check that item saved
         driver.findElement(By.cssSelector("#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(6) > span > a")).click();
@@ -77,22 +46,6 @@ public class CheckoutProcess {
     }
 
     @Test (priority = 3) void discounts () throws InterruptedException {
-        System.setProperty("web driver.chrome.driver", "C:\\Users\\USER\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.etsy.com/");
-        driver.manage().window().maximize();
-
-        WebElement SingInButton = driver.findElement(By.cssSelector("#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button"));
-        SingInButton.click();
-        Thread.sleep(3000);
-        WebElement emailTexbox = driver.findElement(By.xpath("//*[@id=\"join_neu_email_field\"]"));
-        emailTexbox.sendKeys("Velveeta_Cheese@outlook.com");
-        WebElement passTextbox = driver.findElement(By.xpath("//*[@id=\"join_neu_password_field\"]"));
-        passTextbox.sendKeys("Cheese!");
-
-        WebElement logInButton = driver.findElement(By.xpath("//*[@id=\"join-neu-form\"]/div[1]/div/div[7]/div/button"));
-        logInButton.click();
-        Thread.sleep(3000);
 
         //go to cart and check that item saved
         driver.findElement(By.cssSelector("#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(6) > span > a")).click();
