@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="C:/Users/USER/IdeaProjects/Final(failed)">
+    <classes>
+      <class name="Profile_Edit">
+        <methods>
+          <include name="setUp"/>
+          <include name="navigateToHomePage"/>
+          <include name="addProfilePicture"/>
+          <include name="changeCity"/>
+          <include name="genderRadio"/>
+          <include name="editBirthday"/>
+        </methods>
+      </class> <!-- Profile_Edit -->
+      <class name="Product_page">
+        <methods>
+          <include name="setUp"/>
+          <include name="likeProduct"/>
+          <include name="productReviews"/>
+          <include name="infoDisplay"/>
+        </methods>
+      </class> <!-- Product_page -->
+      <class name="Message_Logout">
+        <methods>
+          <include name="setUp"/>
+          <include name="OpenShop"/>
+          <include name="singOUt"/>
+        </methods>
+      </class> <!-- Message_Logout -->
+      <class name="CheckoutProcess">
+        <methods>
+          <include name="setUp"/>
+          <include name="discounts"/>
+          <include name="shipping"/>
+          <include name="payment_method"/>
+        </methods>
+      </class> <!-- CheckoutProcess -->
+      <class name="Search_Functionality">
+        <methods>
+          <include name="setUp"/>
+          <include name="autoSuggestion"/>
+          <include name="filterSearch"/>
+          <include name="searchTest"/>
+        </methods>
+      </class> <!-- Search_Functionality -->
+      <class name="User_login">
+        <methods>
+          <include name="Forgot_Pass"/>
+          <include name="Valid_Cred"/>
+          <include name="navigateToHomePage"/>
+          <include name="setUp"/>
+          <include name="LogIn_success"/>
+          <include name="Verify_email"/>
+          <include name="LogIn_Unsuccess"/>
+          <include name="InValid_Cred"/>
+        </methods>
+      </class> <!-- User_login -->
+      <class name="ShoppingCart">
+        <methods>
+          <include name="setUp"/>
+          <include name="update_quantity"/>
+          <include name="remove_item"/>
+          <include name="add_to_cart"/>
+        </methods>
+      </class> <!-- ShoppingCart -->
+      <class name="Account_creation">
+        <methods>
+          <include name="Valid_Cred"/>
+          <include name="setUp"/>
+          <include name="navigateToHomePage"/>
+          <include name="Verify_email"/>
+          <include name="InValid_Cred"/>
+        </methods>
+      </class> <!-- Account_creation -->
+    </classes>
+  </test> <!-- C:/Users/USER/IdeaProjects/Final(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
