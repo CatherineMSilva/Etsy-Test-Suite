@@ -1,30 +1,15 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import java.io.File;
 import java.io.IOException;
 
 
-public class ShoppingCart {
+public class ShoppingCart extends baseClass {
+   // WebDriver driver = new ChromeDriver();
+   //WebDriver driver = getDriver();
     @Test(priority = 1) void add_to_cart () throws InterruptedException {
-        System.setProperty("web driver.chrome.driver", "C:\\Users\\USER\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.etsy.com");
-        driver.manage().window().maximize();
-
-        WebElement SingInButton = driver.findElement(By.cssSelector("#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button"));
-        SingInButton.click();
-        Thread.sleep(3000);
-        WebElement emailTexbox = driver.findElement(By.xpath("//*[@id=\"join_neu_email_field\"]"));
-        emailTexbox.sendKeys("Velveeta_Cheese@outlook.com");
-        WebElement passTextbox = driver.findElement(By.xpath("//*[@id=\"join_neu_password_field\"]"));
-        passTextbox.sendKeys("Cheese!");
-
-        WebElement logInButton = driver.findElement(By.xpath("//*[@id=\"join-neu-form\"]/div[1]/div/div[7]/div/button"));
-        logInButton.click();
-        Thread.sleep(7000);
 
         WebElement searchBox = driver.findElement(By.xpath("//*[@id=\"global-enhancements-search-query\"]"));
         searchBox.sendKeys("Wooden Tables");
@@ -68,22 +53,6 @@ public class ShoppingCart {
 
 
     @Test (priority = 2) void update_quantity () throws InterruptedException {
-        System.setProperty("web driver.chrome.driver", "C:\\Users\\USER\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.etsy.com");
-        driver.manage().window().maximize();
-
-        WebElement SingInButton = driver.findElement(By.cssSelector("#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button"));
-        SingInButton.click();
-        Thread.sleep(3000);
-        WebElement emailTexbox = driver.findElement(By.xpath("//*[@id=\"join_neu_email_field\"]"));
-        emailTexbox.sendKeys("Velveeta_Cheese@outlook.com");
-        WebElement passTextbox = driver.findElement(By.xpath("//*[@id=\"join_neu_password_field\"]"));
-        passTextbox.sendKeys("Cheese!");
-
-        WebElement logInButton = driver.findElement(By.xpath("//*[@id=\"join-neu-form\"]/div[1]/div/div[7]/div/button"));
-        logInButton.click();
-        Thread.sleep(3000);
 
         //go to cart
         driver.findElement(By.cssSelector("#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(6) > span > a > span.wt-z-index-1.wt-no-wrap.ge-cart-badge.wt-badge.wt-badge--notificationPrimary.wt-badge--small.wt-badge--outset-top-right")).click();
@@ -105,22 +74,6 @@ public class ShoppingCart {
     }
 
     @Test (priority = 3) void remove_item () throws InterruptedException, IOException {
-        System.setProperty("web driver.chrome.driver", "C:\\Users\\USER\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.etsy.com");
-        driver.manage().window().maximize();
-
-        WebElement SingInButton = driver.findElement(By.cssSelector("#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button"));
-        SingInButton.click();
-        Thread.sleep(3000);
-        WebElement emailTexbox = driver.findElement(By.xpath("//*[@id=\"join_neu_email_field\"]"));
-        emailTexbox.sendKeys("Velveeta_Cheese@outlook.com");
-        WebElement passTextbox = driver.findElement(By.xpath("//*[@id=\"join_neu_password_field\"]"));
-        passTextbox.sendKeys("Cheese!");
-
-        WebElement logInButton = driver.findElement(By.xpath("//*[@id=\"join-neu-form\"]/div[1]/div/div[7]/div/button"));
-        logInButton.click();
-        Thread.sleep(3000);
 
         //go to cart
         driver.findElement(By.cssSelector("#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(6) > span > a")).click();
