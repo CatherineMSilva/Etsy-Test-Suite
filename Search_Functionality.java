@@ -1,31 +1,15 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
-import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import java.io.File;
 import java.io.IOException;
 
-public class Search_Functionality {
+public class Search_Functionality extends baseClass {
+    //WebDriver driver = new ChromeDriver();
 
     @Test(priority = 1) void searchTest() throws InterruptedException {
-        System.setProperty("web driver.chrome.driver", "C:\\Users\\USER\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.etsy.com/");
-        driver.manage().window().maximize();
-
-        WebElement SingInButton = driver.findElement(By.cssSelector("#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button"));
-        SingInButton.click();
-        Thread.sleep(3000);
-        WebElement emailTexbox = driver.findElement(By.xpath("//*[@id=\"join_neu_email_field\"]"));
-        emailTexbox.sendKeys("Velveeta_Cheese@outlook.com");
-        WebElement passTextbox = driver.findElement(By.xpath("//*[@id=\"join_neu_password_field\"]"));
-        passTextbox.sendKeys("Cheese!");
-
-        WebElement logInButton = driver.findElement(By.xpath("//*[@id=\"join-neu-form\"]/div[1]/div/div[7]/div/button"));
-        logInButton.click();
-        Thread.sleep(3000);
 
         WebElement searchBox = driver.findElement(By.xpath("//*[@id=\"global-enhancements-search-query\"]"));
         searchBox.sendKeys("Wooden Tables");
@@ -39,22 +23,6 @@ public class Search_Functionality {
         searchButton2.click();
     }
     @Test(priority = 2) void filterSearch() throws InterruptedException{
-        System.setProperty("web driver.chrome.driver", "C:\\Users\\USER\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.etsy.com/");
-        driver.manage().window().maximize();
-
-        WebElement SingInButton = driver.findElement(By.cssSelector("#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button"));
-        SingInButton.click();
-        Thread.sleep(3000);
-        WebElement emailTexbox = driver.findElement(By.xpath("//*[@id=\"join_neu_email_field\"]"));
-        emailTexbox.sendKeys("Velveeta_Cheese@outlook.com");
-        WebElement passTextbox = driver.findElement(By.xpath("//*[@id=\"join_neu_password_field\"]"));
-        passTextbox.sendKeys("Cheese!");
-
-        WebElement logInButton = driver.findElement(By.xpath("//*[@id=\"join-neu-form\"]/div[1]/div/div[7]/div/button"));
-        logInButton.click();
-        Thread.sleep(3000);
 
         WebElement searchBox = driver.findElement(By.xpath("//*[@id=\"global-enhancements-search-query\"]"));
         searchBox.sendKeys("Wooden Tables");
@@ -78,22 +46,6 @@ public class Search_Functionality {
         exitButton.click();
     }
     @Test(priority = 3) void autoSuggestion() throws InterruptedException, IOException {
-        System.setProperty("web driver.chrome.driver", "C:\\Users\\USER\\Downloads\\chromedriver-win32\\chromedriver-win32\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("https://www.etsy.com/");
-        driver.manage().window().maximize();
-
-        WebElement SingInButton = driver.findElement(By.cssSelector("#gnav-header-inner > div.wt-flex-shrink-xs-0 > nav > ul > li:nth-child(1) > button"));
-        SingInButton.click();
-        Thread.sleep(3000);
-        WebElement emailTexbox = driver.findElement(By.xpath("//*[@id=\"join_neu_email_field\"]"));
-        emailTexbox.sendKeys("Velveeta_Cheese@outlook.com");
-        WebElement passTextbox = driver.findElement(By.xpath("//*[@id=\"join_neu_password_field\"]"));
-        passTextbox.sendKeys("Cheese!");
-
-        WebElement logInButton = driver.findElement(By.xpath("//*[@id=\"join-neu-form\"]/div[1]/div/div[7]/div/button"));
-        logInButton.click();
-        Thread.sleep(3000);
 
         WebElement searchBox = driver.findElement(By.xpath("//*[@id=\"global-enhancements-search-query\"]"));
         searchBox.sendKeys("Wooden Tables");
