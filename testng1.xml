@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/USER/IdeaProjects/Final">
+        <classes>
+            <class name="baseClass"></class>
+            <class name="Account_creation">
+                <methods>
+                    <include name="InValid_Cred()"></include>
+                    <include name="Valid_Cred()"></include>
+                    <include name="Verify_email()"></include>
+                </methods>
+            </class>
+            <class name="User_login">
+                <methods>
+                    <include name="LogIn_Unsuccess()"></include>
+                    <include name="LogIn_success()"></include>
+                    <include name="Forgot_Pass()"></include>
+                </methods>
+            </class>
+            <class name="Profile_Edit">
+                <methods>
+                    <include name="addProfilePicture()"></include>
+                    <include name="genderRadio()"></include>
+                    <include name="changeCity()"></include>
+                    <include name="editBirthday()"></include>
+                </methods>
+            </class>
+            <class name="Search_Functionality">
+                <methods>
+                    <include name="searchTest()"></include>
+                    <include name="filterSearch()"></include>
+                    <include name="autoSuggestion()"></include>
+                </methods>
+            </class>
+            <class name="Product_page">
+                <methods>
+                    <include name="infoDisplay()"></include>
+                    <include name="productReviews()"></include>
+                    <include name="roductReviews()"></include>
+                </methods>
+            </class>
+            <class name="ShoppingCart">
+                <methods>
+                    <include name="add_to_cart ()"></include>
+                    <include name="update_quantity ()"></include>
+                    <include name="remove_item ()"></include>
+                </methods>
+            </class>
+            <class name="CheckoutProcess">
+                <methods>
+                    <include name="shipping ()"></include>
+                    <include name="payment_method ()"></include>
+                    <include name="discounts ()"></include>
+                </methods>
+            </class>
+            <class name="Message_Logout">
+                <methods>
+                    <include name="Message()"></include>
+                    <include name="singOUt()"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
